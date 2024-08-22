@@ -49,6 +49,7 @@ def choose_randomly():
                         for j in range(3):
                             button.config(text="❌")
                     grid[random_index] = 1
+                    window.title("🔵's turn")
                 else:
                     random_button = 2
                     turn = [1]
@@ -56,6 +57,7 @@ def choose_randomly():
                         for j in range(3):
                             button.config(text="🔵")
                     grid[random_index] = 2
+                    window.title("❌'s turn")
         has_someone_won()
 
 
